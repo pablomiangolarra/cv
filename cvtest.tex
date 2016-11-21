@@ -1,0 +1,77 @@
+%%
+%% Author: Pablo Miangolarra
+%%
+%% This is file `cv.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%% cvtest.tex
+%% ESIEEcv.dtx  (with options: `cvtest')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from cvtest.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file ESIEEcv.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{ESIEEcv}
+\usepackage{etoolbox}
+
+\oddsidemargin 0in
+\evensidemargin 0in
+\textwidth\paperwidth
+\advance \textwidth by -2in
+\topmargin 0in
+\textheight\paperheight
+\advance\textheight -2in
+\headheight 0pt
+\headsep 0pt
+\footskip 0pt
+
+\renewcommand{\PostApport}{. }
+
+\begin{document}
+%% CV language selection: Spanish(ES),English(EN). 
+\newtoggle{ES}
+\newtoggle{EN}
+\toggletrue{ES}
+\togglefalse{EN}
+
+%% CV positions: project coordination (CO), systems engineer(SYS) or software engineer (SOFT)
+\newtoggle{CO}
+\newtoggle{SYS}
+\newtoggle{SOFT}
+\togglefalse{CO}
+\togglefalse{SYS}
+\toggletrue{SOFT}
+
+\input{1-personal_info}
+%\input{8-profile}
+\input{3-projects}
+\input{2-experience}
+\input{4-education}
+\input{9-certifications}
+\input{6-skills}
+%\input{10-courses}
+%\input{11-seminars}
+\input{5-languages}
+%\input{7-references}
+
+\end{document}
+\endinput
+%%
+%% End of file `cvtest.tex'.
