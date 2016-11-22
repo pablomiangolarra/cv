@@ -1,16 +1,23 @@
 \label{sec:personal_info}
 \noindent\hspace*{\tabcolsep}\begin{minipage}{0.4\linewidth}
-{\large Pablo \textsc{Miangolarra Tejada}}\\
+{\large Pablo Miangolarra Tejada}\\
 Calle valle del Boi, 8\\
 28054 Madrid\\[3pt]
-Tlfn.: +34 665 111 427\\
-E-Mail: \texttt{pablo.miangolarra@gmail.com}
+\iftoggle{ES}{Tfno.: +34 665 111 427\\}{}
+\iftoggle{EN}{Phone: +34 665 111 427\\}{}
+E-Mail:\\ \texttt{pablo.miangolarra@gmail.com}
 \end{minipage}
-\begin{minipage}{0.4\linewidth}
-Fecha de nacimiento: 14 Septiembre 1987 (29 años)\\
-Nacionalidad española\\
+\begin{minipage}{0.38\linewidth}
+\iftoggle{ES}{Fecha de nacimiento:\\ 14 Septiembre 1987 (29 años)\\}{}
+\iftoggle{EN}{Birthday date:\\ Septiembre 14\textsuperscript{th} 1987 (29 years old)\\}{}
+\iftoggle{ES}{Nacionalidad española\\}{}
+\iftoggle{EN}{Spanish citizenship\\}{}
 \end{minipage}
-
+\begin{minipage}{0.2\linewidth}
+\iftoggle{picture}{
+\includegraphics[width=3.0cm]{img/cv_picture}
+}{}
+\end{minipage}
 
 
 

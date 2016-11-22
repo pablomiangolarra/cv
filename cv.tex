@@ -30,6 +30,7 @@
 \usepackage[spanish]{babel}
 \usepackage{ESIEEcv}
 \usepackage{etoolbox}
+\usepackage{graphicx}
 
 \oddsidemargin 0in
 \evensidemargin 0in
@@ -45,19 +46,25 @@
 \renewcommand{\PostApport}{. }
 
 \begin{document}
-%% CV language selection: Spanish(ES),English(EN). 
+
+%% CV language selection: Spanish(ES), English(EN). 
 \newtoggle{ES}
 \newtoggle{EN}
 \toggletrue{ES}
 \togglefalse{EN}
 
-%% CV positions: project coordination (CO), systems engineer(SYS) or software engineer (SOFT)
+%% CV professional profiles: project coordination (CO), systems engineer(SYS) or software engineer (SOFT)
 \newtoggle{CO}
 \newtoggle{SYS}
 \newtoggle{SOFT}
 \togglefalse{CO}
 \togglefalse{SYS}
 \toggletrue{SOFT}
+
+%% Add candidate picture to cv
+\newtoggle{picture}
+%\toggletrue{picture}
+\togglefalse{picture}
 
 \input{1-personal_info}
 %\input{8-profile}
