@@ -1,17 +1,27 @@
 \label{sec:personal_info}
 \noindent\hspace*{\tabcolsep}\begin{minipage}{0.4\linewidth}
 {\large Pablo Miangolarra Tejada}\\
-Calle valle del Boi, 8\\
-28054 Madrid\\[3pt]
+
+\iftoggle{ES}{Calle valle del Boi, 8\\}{}
+\iftoggle{ES}{28054 Madrid}{} 
+\iftoggle{EN}{Meisenweg, 10\\}{}
+\iftoggle{EN}{66763 Kaiserslautern (Deutschland)}{}
+
 \iftoggle{ES}{Tfno.: +34 665 111 427\\}{}
 \iftoggle{EN}{Phone: +34 665 111 427\\}{}
 E-Mail:\\ \texttt{pablo.miangolarra@gmail.com}
 \end{minipage}
 \begin{minipage}{0.38\linewidth}
+\vskip 0.5cm
 \iftoggle{ES}{Fecha de nacimiento:\\ 14 Septiembre 1987 (29 años)\\}{}
 \iftoggle{EN}{Birthday date:\\ Septiembre 14\textsuperscript{th} 1987 (29 years old)\\}{}
-\iftoggle{ES}{Nacionalidad española\\}{}
-\iftoggle{EN}{Spanish citizenship\\}{}
+%\iftoggle{ES}{Nacionalidad española\\}{}
+%\iftoggle{EN}{Spanish citizenship\\}{}
+\vskip 0.5cm
+\iftoggle{ES}{Web \& Git\\
+Blog: https://fidgetyfig.wordpress.com
+LinkedIn: https://www.linkedin.com
+Twitter: https://twitter.com/miangolarra}{}
 \end{minipage}
 \begin{minipage}{0.2\linewidth}
 \iftoggle{picture}{
